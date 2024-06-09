@@ -13,6 +13,10 @@
     z-index: 99;
 }
 
+.fa-eye-slash{
+    transform: translate(290px,-37px);
+}
+
 
 /*** Spinner ***/
 #spinner {

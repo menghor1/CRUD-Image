@@ -1,15 +1,44 @@
 (function ($) {
     "use strict";
 
+    $('body').on('click','#btn-delete',function(){
+        var id = $(this).attr('remove');
+        $('#remove-val').val(id);
+    });
+    var a=0;
+    $('#exampleCheck1').on('click',function(){
+        if(a==0){
+            $('#floatingPassword').attr('type','text');
+            a=1;
+        }else if(a==1){
+            $('#floatingPassword').attr('type','password');
+            a=0;
+        }
+           
+    })
+    // var a=0;
+    // document.querySelector('#exampleCheck1').addEventListener('click',function(){
+    //     if(a==0){
+            
+    //         document.querySelector('#floatingPassword').type='text';
+    //         a=1
+    //     }
+    //     else if(a==1){
+    //         document.querySelector('#floatingPassword').type='password';
+    //         a=0;
+    //     }
+    // })
+
+
     // Spinner
-    var spinner = function () {
-        setTimeout(function () {
-            if ($('#spinner').length > 0) {
-                $('#spinner').removeClass('show');
-            }
-        }, 1);
-    };
-    spinner();
+    // var spinner = function () {
+    //     setTimeout(function () {
+    //         if ($('#spinner').length > 0) {
+    //             $('#spinner').removeClass('show');
+    //         }
+    //     }, 1);
+    // };
+    // spinner();
     
     
     // Back to top button
